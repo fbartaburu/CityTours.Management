@@ -1,7 +1,7 @@
+<!--
 <nb-layout>
 
   <nb-layout-header fixed>
-  <!-- Insert header here -->
   </nb-layout-header>
 
   <nb-layout-column>
@@ -9,7 +9,43 @@
   </nb-layout-column>
 
   <nb-layout-footer fixed>
-  <!-- Insert footer here -->
   </nb-layout-footer>
 
+</nb-layout>
+-->
+
+<nb-layout>
+  <nb-sidebar>
+
+    <nb-accordion multi>
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Usuarios
+        </nb-accordion-item-header>
+        <nb-accordion-item-body>
+          <a href="#">Listado</a>
+        </nb-accordion-item-body>
+      </nb-accordion-item>
+    
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Hoteles
+        </nb-accordion-item-header>
+        <nb-accordion-item-body></nb-accordion-item-body>
+      </nb-accordion-item>
+    
+      <nb-accordion-item>
+        <nb-accordion-item-header>
+          Vehículos
+        </nb-accordion-item-header>
+        <nb-accordion-item-body></nb-accordion-item-body>
+      </nb-accordion-item>
+    </nb-accordion>
+
+
+  </nb-sidebar>
+
+  <nb-layout-column class="colored-column-basic">
+    <router-outlet></router-outlet>
+  </nb-layout-column>
 </nb-layout>
